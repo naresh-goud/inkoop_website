@@ -43,10 +43,11 @@ span {
 
 .ctn {
     padding: 10px 40px;
-    background-color: #EF4444;
-    color: whitesmoke;
+    color: black;
     border-radius: 30px;
     text-align: center;
+    background-color: #EF4444;
+    
 }
 
 .line {
@@ -116,16 +117,24 @@ img {
 
 
 
-    @media only screen and (max-width:850px) {
+    @media only screen and (max-width:700px) {
         .navbar {
             padding: 0;
         }
 
         .logo {
             position: absolute;
-            top: 30px;
-            left: 30px;
+            top: 0px;
+            left: 100px;
             align-items: center;
+            margin: 1px;
         }
+
+    ul{
+        display: none;
+    }
+   
+
+
 
     }
