@@ -30,11 +30,13 @@ li {
 .logo {
     margin: 40px 0;
     margin-left: 30px;
+    font-size: 30px;
 
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 span {
@@ -43,40 +45,30 @@ span {
 
 .ctn {
     padding: 10px 40px;
+    background: tomato;
     color: black;
     border-radius: 30px;
-    text-align: center;
-    background-color: #EF4444;
+    text-align: center;  
     
 }
 
 .line {
-    display: flex;
-    width: 50px;
-    height: 4px;
-    background: tomato;
-    margin-top: 10px;
+display: flex;
+width: 50px;
+height: 4px;
+background: tomato;
+margin-top: 10px;
     border-radius: 5px;
     position: absolute;
     top: 80px;
-    left: 200px;
+    left: 1px;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    text-align: center;
-}
+
 
 /* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
 
 .row {
     
@@ -84,6 +76,7 @@ span {
     position: absolute;
     top: 350px;
     left: 300px;
+    flex-direction: row;
 
 }
 
@@ -95,46 +88,96 @@ span {
     border-radius: 10px;
     border: 1px white;
     box-shadow: 20px 20px 20px 10px #E5E7EB;
-
+    float: left;
+    width: 33.33%;
+    text-align: center;
 }
 
 img {
     border-radius: 75%;
-}
+    padding: 20px;
+    background: white;
+    }
 
 .footer-content {
     display: flex;
-    position: fixed;
-    left: 800px;
+    position: absolute;
+    left: 1000px;
     top: 100px;
-    align-items: flex-end;
+}
 
+.header-content{
+    position:absolute; 
+    left: 300px; 
+    top: 100px; 
+    font-size: 40px;
+}
+.menu {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+    color: red;
+      }
+
+  .cart{
+      margin-left: 400px;
+      margin-top: 30px;
+      display: none;
+
+  }
+
+
+
+
+
+
+
+ @media only screen and (max-width:700px) {
+       
+.navbar {
+padding: 0;
 }
 
 .logo {
-    font-size: 30px;
+position: absolute;
+top: 0px;
+left: 100px;
+align-items: center;
+margin: 1px;
 }
 
+ul{
+display: none;
+}
 
+header {
+position: absolute;
+font-size: 10px;
+left: 0px;
+}
 
-    @media only screen and (max-width:700px) {
-        .navbar {
-            padding: 0;
-        }
+.header-content{
+position:absolute; 
+left: 50px; 
+top: 150px; 
+font-size: 15px;
+}
 
-        .logo {
-            position: absolute;
-            top: 0px;
-            left: 100px;
-            align-items: center;
-            margin: 1px;
-        }
+.row {
+display: flex;
+position: absolute;
+top: 350px;
+left: 100px;
+flex-direction: column;
+top: 250px;
+}
+.menu{
+display: block;
+}
+.cart{
+    display: block;
+}
 
-    ul{
-        display: none;
-    }
-   
-
-
-
-    }
+}
